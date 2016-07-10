@@ -15,7 +15,7 @@ export default class Progress {
       throw new Error('Should be a number');
     }
     //max the 15 blocks
-    let max = 15;
+    const max = 15;
     let progress = [];
     //how many blocks in percents
     percent = (Math.ceil(percent) * max) / 100;
@@ -29,3 +29,5 @@ export default class Progress {
   }
 
 }
+
+console.log(new Progress().makeProgressString(23));
