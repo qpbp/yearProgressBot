@@ -8,7 +8,7 @@ export default class Command {
   constructor() {}
 
   getGreeting(message, bot) {
-    bot.sendMessage(message.from, 'Hi, there! It is nice to see you here, ' + message.user.firstName + '!');
+    bot.sendMessage(message.from, 'Hi, there! It is nice to see you here, ${message.user.firstName} !');
   }
 
   getProgress(message, bot) {
