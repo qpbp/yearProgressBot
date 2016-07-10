@@ -29,5 +29,3 @@ export default class Progress {
   }
 
 }
-
-console.log(new Progress().makeProgressString(23));
