@@ -17,7 +17,7 @@ export default class Progress {
     //max the 15 blocks
     const max = 15;
     let progress = [];
-    //how many blocks in percents
+    //how much blocks in percents
     percent = (Math.ceil(percent) * max) / 100;
     for (let i = 0; i < max; i++) {
       if (i < percent) { progress.push('▓'); } else { progress.push('░'); }

@@ -10,7 +10,7 @@ export default class Time {
   getYearProgress() {
     //days in the current year
     const yearDays = Math.ceil((new Date(this.currentYear + 1, 0, 1) - this.startDate) / 8.64e7);
-    //how many days passed from year begining
+    //how much days passed from year begining
     const passedDays = Math.ceil((new Date() - this.startDate) / 8.64e7); // 31
     return Math.ceil((passedDays / yearDays) * 100);
   }
@@ -21,7 +21,7 @@ export default class Time {
     const currentMonth = now.getMonth();
     //get month "length"
     const daysInMonth = new Date(this.currentYear, currentMonth, 0).getDate();
-    //how many days passed from month begining
+    //how much days passed from month begining
     const daysSinceStartOfMonth = now.getDate() - 1;
 
     return Math.ceil((daysSinceStartOfMonth / daysInMonth) * 100);

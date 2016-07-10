@@ -1,7 +1,7 @@
 {
   "name": "year-progress-bot",
   "version": "1.0.0",
-  "description": "The bot to feel how many time you waste.",
+  "description": "The bot to feel how much time you waste.",
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon src/index.js --exec babel-node",
